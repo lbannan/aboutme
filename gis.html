@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GIS | Le</title>
+  <meta name="description" content="Story maps, interactive web maps and cartographic work by Le.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html">Le</a>
+      <ul>
+        <li><a class="link" href="index.html">Home</a></li>
+        <li><a class="link" href="research.html">Research</a></li>
+        <li><a class="link" href="gis.html" aria-current="page">GIS</a></li>
+        <li><a class="link" href="writing.html">Writing</a></li>
+        <li><a class="link" href="events.html">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>GIS</h1>
+    <p class="intro">Story maps, interactive web maps and cartographic products. Interactive maps load in the page and can be opened full screen.</p>
+
+    <h2>Story maps</h2>
+
+    <!--
+      To embed an ArcGIS StoryMap, open it, choose Share, set it to Everyone (public),
+      then copy the story URL into src below. The URL looks like
+      https://storymaps.arcgis.com/stories/xxxxxxxxxxxx
+    -->
+    <div class="embed">
+      <iframe src="https://storymaps.arcgis.com/stories/REPLACE_WITH_STORY_ID"
+              title="Story Map on community-centred bushfire adaptation in East Gippsland"
+              loading="lazy" allowfullscreen allow="geolocation"></iframe>
+      <div class="body">
+        <h3>Community-centred bushfire adaptation in East Gippsland</h3>
+        <p>Companion Story Map to my Master's research, presented to East Gippsland Shire Council.</p>
+        <p><a href="https://storymaps.arcgis.com/stories/REPLACE_WITH_STORY_ID" target="_blank" rel="noopener">Open full screen</a></p>
+      </div>
+    </div>
+
+    <h2>Interactive maps</h2>
+
+    <!--
+      Works for ArcGIS Online web maps and apps (Share, then Embed in website, copy the src),
+      or an HTML map you export from QGIS (qgis2web) or build with Leaflet.
+      For your own HTML map, put the file in a maps folder and use src="maps/your-map.html"
+    -->
+    <div class="embed">
+      <iframe src="maps/example-map.html" title="Interactive map title" loading="lazy" allowfullscreen></iframe>
+      <div class="body">
+        <h3>Interactive map title</h3>
+        <p>What the map shows, the data source and the year.</p>
+      </div>
+    </div>
+
+    <h2>Maps and spatial products</h2>
+
+    <!-- Copy a card for each map image. Put the image in images/maps/ -->
+    <div class="grid">
+      <a class="card" href="images/maps/map-1.jpg" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+        <img src="images/maps/map-1.jpg" alt="Short description of the map" loading="lazy">
+        <div class="body">
+          <h3>Map title</h3>
+          <p>Project, data and software used.</p>
+        </div>
+      </a>
+      <a class="card" href="images/maps/map-2.jpg" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+        <img src="images/maps/map-2.jpg" alt="Short description of the map" loading="lazy">
+        <div class="body">
+          <h3>Map title</h3>
+          <p>Project, data and software used.</p>
+        </div>
+      </a>
+      <a class="card" href="images/maps/map-3.jpg" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+        <img src="images/maps/map-3.jpg" alt="Short description of the map" loading="lazy">
+        <div class="body">
+          <h3>Map title</h3>
+          <p>Project, data and software used.</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>&copy; <span id="year"></span> Le. Built with GitHub Pages.</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

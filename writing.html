@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing | Le</title>
+  <meta name="description" content="Poetry and personal essays by Le.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html">Le</a>
+      <ul>
+        <li><a class="link" href="index.html">Home</a></li>
+        <li><a class="link" href="research.html">Research</a></li>
+        <li><a class="link" href="gis.html">GIS</a></li>
+        <li><a class="link" href="writing.html" aria-current="page">Writing</a></li>
+        <li><a class="link" href="events.html">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Personal writing</h1>
+    <p class="intro">Poetry and personal essays. Click a title to read.</p>
+
+    <h2>Poetry</h2>
+
+    <!--
+      Copy a details block for each poem. Line breaks you type inside
+      the poem div are kept exactly, so paste the poem as written.
+    -->
+    <details class="piece">
+      <summary>Poem title <span class="meta">Year</span></summary>
+      <div class="poem">First line of the poem
+Second line of the poem
+
+A new stanza starts after a blank line</div>
+    </details>
+
+    <h2>Essays</h2>
+
+    <!-- Copy a details block for each essay. Use a p tag for each paragraph. -->
+    <details class="piece">
+      <summary>Essay title <span class="meta">Year &middot; also published in Venue, if any</span></summary>
+      <div class="essay">
+        <p>First paragraph.</p>
+        <p>Second paragraph.</p>
+      </div>
+    </details>
+  </main>
+
+  <footer>&copy; <span id="year"></span> Le. Built with GitHub Pages.</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
