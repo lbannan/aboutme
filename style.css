@@ -13,18 +13,6 @@
   --sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #141a17;
-    --surface: #1c2420;
-    --ink: #e8ece6;
-    --muted: #a3ada6;
-    --accent: #d38a5f;
-    --accent-soft: transparent;
-    --line: #2f3a34;
-  }
-}
-
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
